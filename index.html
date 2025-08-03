@@ -8,16 +8,25 @@
 		<title>Calc</title>
 	</head>
 	<body>
-		<div id="calc-body">
-			<div class="display">
-				<div class="heading">Calc 1.0</div>
-				<input type="text" class="display" disabled />
+		<div class="calc-body">
+			<div class="top-section">
+				<h1 class="heading">Calc 1.0</h1>
+				<p id="input-display">15 + 20 + 5</p>
+				<p id="output-display">= 30</p>
 			</div>
-			<div class="operators">
-				<button class="operator">+</button>
-				<button class="operator">-</button>
-				<button class="operator">*</button><button class="operator">/</button>
-				<button class="operator">=</button>
+			<div class="operator-section">
+				<div class="main-operators">
+					<div class="op1">
+						<button class="operator" id="add">+</button>
+						<button class="operator" id="subtract">-</button>
+					</div>
+					<div class="op2">
+						<button class="operator" id="multiply">*</button
+						><button class="operator" id="divide">/</button>
+					</div>
+				</div>
+
+				<button class="operator" id="equals">=</button>
 			</div>
 		</div>
 	</body>

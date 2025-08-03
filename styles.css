@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calc-body {
+	background-color: gray;
+	width: 25vw;
+	min-width: 500px;
+	border-radius: 10px;
+	padding: 2rem;
+}
+
+.top-section {
+	margin-bottom: 2rem;
+	font-size: 3rem;
+
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+		color: white;
+	}
+
+	p {
+		width: 100%;
+		border-radius: 4px;
+		background-color: white;
+		border: none;
+	}
+
+	#input-display {
+		margin-bottom: 1rem;
+		padding: 2rem 1.5rem;
+	}
+
+	#output-display {
+		padding: 1rem 1.5rem;
+	}
+}
+
+.operator-section {
+	display: flex;
+	height: 20rem;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.operator {
+		padding: 2rem 0;
+		flex: 1;
+		font-size: 1.5rem;
+		background-color: #d1d1d1;
+		border: 0;
+		border-radius: 8px;
+	}
+
+	.op1,
+	.op2 {
+		display: flex;
+		padding: 1rem;
+		gap: 2rem;
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.op2 {
+		padding-top: 0;
+		margin-bottom: 2rem;
+	}
+
+	#equals {
+		font-size: 3rem;
+		margin-bottom: 3rem;
+		padding: 0;
+	}
+
+	.operator:hover {
+		background-color: rgb(58, 58, 58);
+		color: white;
+	}
+}
