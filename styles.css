@@ -30,7 +30,7 @@ button:hover {
 
 .top-section {
 	margin-bottom: 2rem;
-	font-size: 3rem;
+	font-size: 2.5rem;
 
 	h1 {
 		font-size: 2rem;
@@ -47,12 +47,14 @@ button:hover {
 
 	#input-display {
 		margin-bottom: 1rem;
-		padding: 2rem 1.5rem;
+		padding: 1rem 1.5rem;
+		min-height: 5rem;
 	}
 
 	#output-display {
 		padding: 1rem 1.5rem;
 		font-weight: bold;
+		min-height: 5rem;
 	}
 }
 
@@ -118,6 +120,7 @@ button:hover {
 			min-height: 20%;
 			flex: 1;
 			border: none;
+			border-radius: 6px;
 		}
 	}
 }
