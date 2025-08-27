@@ -11,8 +11,17 @@ body {
 	justify-content: center;
 }
 
+button {
+	background-color: white;
+}
+
+button:hover {
+	background-color: rgb(58, 58, 58);
+	color: white;
+}
+
 .calc-body {
-	background-color: gray;
+	background-color: rgb(80, 80, 80);
 	width: 25vw;
 	min-width: 500px;
 	border-radius: 10px;
@@ -43,6 +52,7 @@ body {
 
 	#output-display {
 		padding: 1rem 1.5rem;
+		font-weight: bold;
 	}
 }
 
@@ -56,33 +66,58 @@ body {
 		padding: 2rem 0;
 		flex: 1;
 		font-size: 1.5rem;
-		background-color: #d1d1d1;
 		border: 0;
 		border-radius: 8px;
 	}
 
-	.op1,
-	.op2 {
-		display: flex;
-		padding: 1rem;
-		gap: 2rem;
-		width: 75%;
-		margin: 0 auto;
-	}
+	.main-operators {
+		background-color: rgb(110, 110, 110);
+		border-radius: 8px;
+		flex: 1;
+		flex-basis: 0;
+		align-items: center;
+		padding: 0 0.5rem;
+		.op1,
+		.op2 {
+			display: flex;
+			padding: 1rem 0;
+			gap: 1rem;
+			width: 90%;
+			margin: 0 auto;
+		}
 
-	.op2 {
-		padding-top: 0;
-		margin-bottom: 2rem;
+		.op2 {
+			padding-top: 0;
+		}
 	}
 
 	#equals {
 		font-size: 3rem;
-		margin-bottom: 3rem;
+		margin: 2rem 0;
 		padding: 0;
 	}
+}
 
-	.operator:hover {
-		background-color: rgb(58, 58, 58);
-		color: white;
+.numbers-and-operators {
+	display: flex;
+	gap: 1rem;
+
+	.numbers {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		flex: 1.5;
+		flex-basis: 0;
+
+		button {
+			width: 5rem;
+			height: 2rem;
+			min-width: 30%;
+			min-height: 20%;
+			flex: 1;
+			border: none;
+		}
 	}
 }
